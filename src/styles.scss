@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --colorfond0: #202020;
+    --colorfond1: #303030;
+    --colorfond2: #505050;
+
+    --colortext: #ccc;
+
+    --colorselectedborder: #992020;
+}
+
+body{
+    background-color:var(--colorfond0);
+}
+p{
+    color:var(--colortext);
+}
+input{
+    background-color:var(--colorfond2);
+    border-radius:10px;
+    color:white;
+    text-align: center;
+}
+
+
+
+
+
+
+.bloc{
+    border:2px solid black;
+    border-radius:20px;
+    color:var(--colorfond1);
+    padding: 5px;
+    text-align: center;
+}
+.flex{
+    display:flex;
+    justify-content: space-around;
+}
+.clickable{
+    transition: all 0.4s;
+}
+.clickable:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity:0.9;
+}

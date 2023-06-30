@@ -1,0 +1,5 @@
+<div class="flex">
+    <div class="bloc clickable" style="width:10%" *ngFor="let joueur of joueurs" [class.selected]="joueurSelected==joueur" (click)="joueurSelected=joueur">
+        <p>{{joueur.pseudo}}</p>
+    </div>
+</div>
