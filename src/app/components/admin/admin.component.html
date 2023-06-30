@@ -1,0 +1,10 @@
+<div class="flex">
+    <div style="width:20%;">
+        <div class="flex"><button (click)="mode='items'">Items</button></div>
+        <div class="flex"><button (click)="mode='persos'">Personnages</button></div>
+        <div class="flex"><button (click)="mode='competences'">Compétences</button></div>
+    </div>
+    <div style="width:80%">
+        <app-adminitems *ngIf="mode=='items'"></app-adminitems>
+    </div>
+</div>
