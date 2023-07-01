@@ -4,12 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ConnectComponent } from './components/connect/connect.component';
+import { SelectChampComponent } from './components/select-champ/select-champ.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ConnectComponent
+    ConnectComponent,
+    SelectChampComponent
   ],
   imports: [
     HttpClientModule,

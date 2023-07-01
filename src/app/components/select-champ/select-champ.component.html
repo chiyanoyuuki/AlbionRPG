@@ -1,0 +1,26 @@
+<div id="contener_select_champ">
+  <h2 class="titre">Selectionner un personnage</h2>
+  <div class="slider_champ">
+    <div
+      *ngFor="let perso of personnages"
+      class="bloc_champ"
+      (click)="selectPerso(perso)"
+      style="border-color: {{ perso.color }};"
+    >
+      <img src="./assets/images/perso/{{ perso.image }}.png" alt="" />
+      <div class="stat">
+        <ul>
+          <li *ngFor="let stat of perso.stats">
+            <p>{{ stat.nom }}</p>
+            <p>{{ stat.qte }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="champ_lock">
+    <div class="bloc_champ_lock" *ngFor="let perso of personnageLock">
+      <img src="./assets/images/minia/perso/{{perso.image}}.png" alt="" />
+    </div>
+  </div>
+</div>
